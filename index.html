@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AuraBids | Premium Online Auctions</title>
+  <meta name="description" content="Exclusive online bidding platform for rare collectibles and luxury items.">
+  
+  <!-- Modern Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  
+  <!-- CSS Link -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Top Navigation Bar -->
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="nav-left">
+        <a href="#" class="brand-logo">
+          <svg class="brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          <span class="brand-name">Aura<span class="brand-highlight">Bids</span></span>
+        </a>
+      </div>
+
+      <div class="nav-center">
+        <div class="search-bar">
+          <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="text" placeholder="Search for watches, art, antiques...">
+        </div>
+      </div>
+
+      <div class="nav-right">
+        <button class="nav-btn">Live Auctions <span class="pulse-dot"></span></button>
+        <button class="nav-btn ghost">My Bids</button>
+        <div class="user-profile">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&auto=format&fit=crop&q=80" alt="User Profile" class="avatar">
+          <div class="user-details">
+            <span class="user-name">Dhoni</span>
+            <span class="user-balance">$12,450.00</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Layout -->
+  <main class="main-layout">
+    
+    <!-- Left Area: Auctions -->
+    <div class="auction-content">
+      
+      <!-- Featured Highlight Auction -->
+      <section class="featured-auction">
+        <div class="featured-image-wrapper">
+          <img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=800&auto=format&fit=crop&q=80" alt="Featured Item" class="featured-img">
+          <div class="badge-live">LIVE NOW</div>
+        </div>
+        
+        <div class="featured-details">
+          <div class="lot-number">LOT #402</div>
+          <h1 class="item-title">Vintage Rolex Submariner (1978)</h1>
+          <p class="item-desc">Exceptional condition classic timepiece with original box and papers. Highly sought after by collectors.</p>
+          
+          <div class="bidding-stats">
+            <div class="stat-box">
+              <span class="stat-label">Current Highest Bid</span>
+              <span class="stat-value text-gradient" id="featured-bid">$18,500</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-label">Ends In</span>
+              <div class="countdown-timer timer-featured">
+                <span class="time-block"><span class="digits hours">02</span><span class="label">h</span></span> :
+                <span class="time-block"><span class="digits minutes">45</span><span class="label">m</span></span> :
+                <span class="time-block"><span class="digits seconds">12</span><span class="label">s</span></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="bid-action-area">
+            <div class="quick-bid-btns">
+              <button class="btn-quick-bid" data-amount="19000">+$500</button>
+              <button class="btn-quick-bid" data-amount="19500">+$1000</button>
+              <button class="btn-quick-bid" data-amount="20500">+$2000</button>
+            </div>
+            <button class="btn-primary-bid" id="btn-place-main-bid">PLACE BID NOW</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Title -->
+      <div class="section-heading">
+        <h2>Trending Auctions</h2>
+        <a href="#" class="view-all">View All Lots &rarr;</a>
+      </div>
+
+      <!-- Active Auctions Grid -->
+      <section class="auction-grid">
+        
+        <!-- Grid Item 1 -->
+        <article class="auction-card">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1542362567-b07e54358753?w=500&auto=format&fit=crop&q=80" alt="Sports Car" class="card-img">
+            <div class="card-timer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 04:15:30</div>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">1967 Porsche 911 Classic</h3>
+            <div class="card-bid-info">
+              <span class="bid-label">Current Bid</span>
+              <span class="bid-price">$124,000</span>
+            </div>
+            <button class="btn-outline-bid">Place Bid</button>
+          </div>
+        </article>
+
+        <!-- Grid Item 2 -->
+        <article class="auction-card">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1516962215378-7fa2e137ae93?w=500&auto=format&fit=crop&q=80" alt="Camera" class="card-img">
+            <div class="card-timer ending-soon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 00:08:45</div>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Leica M6 Rangefinder (Mint)</h3>
+            <div class="card-bid-info">
+              <span class="bid-label">Current Bid</span>
+              <span class="bid-price">$4,250</span>
+            </div>
+            <button class="btn-outline-bid">Place Bid</button>
+          </div>
+        </article>
+
+        <!-- Grid Item 3 -->
+        <article class="auction-card">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1577978255953-f77f88eb2203?w=500&auto=format&fit=crop&q=80" alt="Art" class="card-img">
+            <div class="card-timer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 12:40:00</div>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Contemporary Abstract Oil Canvas</h3>
+            <div class="card-bid-info">
+              <span class="bid-label">Current Bid</span>
+              <span class="bid-price">$1,800</span>
+            </div>
+            <button class="btn-outline-bid">Place Bid</button>
+          </div>
+        </article>
+
+      </section>
+    </div>
+
+    <!-- Right Sidebar: Live Bid Feed -->
+    <aside class="live-activity-sidebar">
+      <div class="sidebar-header">
+        <h3>Live Bidding Activity</h3>
+        <span class="status-live">● Live</span>
+      </div>
+      
+      <div class="bids-stream" id="bids-stream">
+        <!-- Feed Item -->
+        <div class="feed-item new">
+          <div class="feed-avatar">JD</div>
+          <div class="feed-info">
+            <p class="feed-text"><strong>John D.</strong> bid on <span>Rolex Submariner</span></p>
+            <span class="feed-time">Just now</span>
+          </div>
+          <div class="feed-amount">$18,500</div>
+        </div>
+
+        <div class="feed-item">
+          <div class="feed-avatar">AK</div>
+          <div class="feed-info">
+            <p class="feed-text"><strong>Anna K.</strong> bid on <span>Leica M6</span></p>
+            <span class="feed-time">2 mins ago</span>
+          </div>
+          <div class="feed-amount">$4,250</div>
+        </div>
+
+        <div class="feed-item">
+          <div class="feed-avatar">MR</div>
+          <div class="feed-info">
+            <p class="feed-text"><strong>Mike R.</strong> bid on <span>Rolex Submariner</span></p>
+            <span class="feed-time">5 mins ago</span>
+          </div>
+          <div class="feed-amount">$18,000</div>
+        </div>
+      </div>
+    </aside>
+
+  </main>
+
+  <!-- Notification Toast Container -->
+  <div id="toast-container" class="toast-container"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
